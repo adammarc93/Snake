@@ -34,7 +34,7 @@ namespace Snake
                 {
                     case ConsoleKey.D1:
                         Console.Clear();
-                        //Game.NewGame();
+                        Game.NewGame();
                         break;
                     case ConsoleKey.Escape:
                     case ConsoleKey.D2:
