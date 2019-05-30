@@ -43,6 +43,5 @@ namespace Snake
             Console.Write("Wynik = {0}", points);
             Console.BackgroundColor = ConsoleColor.Black;
         }
-
     }
 }

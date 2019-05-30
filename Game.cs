@@ -10,6 +10,7 @@ namespace Snake
     {
         static bool gameActive = true;
         static int points = 0;
+        static DateTime start = DateTime.Now;
 
         public static void NewGame()
         {
