@@ -68,6 +68,9 @@ namespace Snake
                     Snake.ClearSnake();
                     Snake.CreateSnake();
                     points = 0;
+                    Console.BackgroundColor = ConsoleColor.DarkCyan;
+                    Console.SetCursorPosition(Board.minCol + 9, Board.maxRow);
+                    Console.Write("   ");
                 }
                 else
                 {
