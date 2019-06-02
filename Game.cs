@@ -19,6 +19,8 @@ namespace Snake
             gameActive = true;
             points = 0;
             Board.PaintBoard();
+            Snake.CreateSnake();
+            Play();
         }
     }
 }
