@@ -11,8 +11,9 @@ namespace Snake
     {
         static bool gameActive = true;
         static DateTime start = DateTime.Now;
-        static Prize prize = new Prize();
         static int points = 0;
+        static Prize prize = new Prize();
+
 
         public static void NewGame()
         {
@@ -141,7 +142,7 @@ namespace Snake
                 {
                     Snake.whereTurn = Direction.down;
                 }
-
+                
                 if (key.Key == ConsoleKey.Escape)
                 {
                     GameOver();

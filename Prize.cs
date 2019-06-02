@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Prize
+    public class Prize
     {
         public int Value { get; private set; }
-        public Point position { get; set; }
+        public Point position = new Point();
 
         public Prize()
         {
@@ -33,6 +33,9 @@ namespace Snake
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
             }
+
+            Console.Write(Value);
+            Console.ForegroundColor = color;
         }
 
         public void ClearPrize()

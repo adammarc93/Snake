@@ -63,11 +63,11 @@ namespace Snake
             }
             else if (whereTurn == Direction.up)
             {
-                horizontal = -1;
+                vertical = -1;
             }
             else if (whereTurn == Direction.down)
             {
-                horizontal = 1;
+                vertical = 1;
             }
         }
 
@@ -80,8 +80,8 @@ namespace Snake
             ClearPoint(snakeBody.Last.Value);
             snakeBody.RemoveLast();
             ShiftForTheHead(ref shiftVertical, ref shiftHorizontal);
-            point.X = snakeBody.First.Value.X + shiftVertical;
-            point.Y = snakeBody.First.Value.Y + shiftHorizontal;
+            point.Y = snakeBody.First.Value.Y + shiftVertical;
+            point.X = snakeBody.First.Value.X + shiftHorizontal;
             snakeBody.AddFirst(point);
             DrawPoint(point);
         }
@@ -93,7 +93,7 @@ namespace Snake
             if ((whereTurn == Direction.right && snakeBody.First.Value.X >= Board.maxCol - 2) ||
                 (whereTurn == Direction.left && snakeBody.First.Value.X <= Board.minCol + 1) ||
                 (whereTurn == Direction.up && snakeBody.First.Value.Y <= Board.minRow + 1) ||
-                (whereTurn == Direction.down && snakeBody.First.Value.Y <= Board.maxRow - 1))
+                (whereTurn == Direction.down && snakeBody.First.Value.Y >= Board.maxRow - 1))
             {
                 moveAllowed = false;
             }
