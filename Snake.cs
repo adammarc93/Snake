@@ -89,6 +89,7 @@ namespace Snake
         public static bool MoveSnake()
         {
             bool moveAllowed = true;
+
             if ((whereTurn == Direction.right && snakeBody.First.Value.X >= Board.maxCol - 2) ||
                 (whereTurn == Direction.left && snakeBody.First.Value.X <= Board.minCol + 1) ||
                 (whereTurn == Direction.up && snakeBody.First.Value.Y <= Board.minRow + 1) ||

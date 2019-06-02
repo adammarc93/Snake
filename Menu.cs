@@ -28,7 +28,7 @@ namespace Snake
                 Console.Write("2 - Exit");
                 Console.ForegroundColor = ConsoleColor.White;
 
-                ConsoleKeyInfo key = Console.ReadKey();
+                ConsoleKeyInfo key = Console.ReadKey(true);
 
                 switch (key.Key)
                 {
