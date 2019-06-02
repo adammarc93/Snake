@@ -22,5 +22,10 @@ namespace Snake
             Snake.CreateSnake();
             Play();
         }
+
+        private static void Play()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -145,5 +145,21 @@ namespace Snake
 
             return result;
         }
+
+        public static bool IsHere(Point prizePoint)
+        {
+            bool result = false;
+
+            foreach (var snakePoint in snakeBody)
+            {
+                if (snakePoint.X == prizePoint.X && snakePoint.Y == prizePoint.Y)
+                {
+                    result = true;
+                    break;
+                }
+            }
+
+            return result;
+        }
     }
 }
