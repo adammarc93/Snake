@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Snake
 {
@@ -19,12 +15,12 @@ namespace Snake
                 Console.Clear();
                 Console.CursorVisible = false;
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.SetCursorPosition(Board.minCol + 20, Board.minRow + 1);
+                Console.SetCursorPosition(Board.minCol + 25, Board.minRow + 1);
                 Console.Write(">>> C o n s o l e  S n a k e <<<");
                 Console.ForegroundColor = ConsoleColor.Gray;
-                Console.SetCursorPosition(Board.minCol + 28, Board.minRow + 10);
+                Console.SetCursorPosition(Board.minCol + 32, Board.minRow + 10);
                 Console.Write("1 - Start game");
-                Console.SetCursorPosition(Board.minCol + 28, Board.minRow + 12);
+                Console.SetCursorPosition(Board.minCol + 32, Board.minRow + 12);
                 Console.Write("2 - Exit");
                 Console.ForegroundColor = ConsoleColor.White;
 
